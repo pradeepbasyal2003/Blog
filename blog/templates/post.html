@@ -1,0 +1,15 @@
+</DOCTYPE html>
+{%load static%}
+<html>
+    <body>
+        <h1>{{post.title}}</h1>
+        <p>{{post.content}}</p>
+        <p>{{post.author}}</p>
+
+        <h2>comments</h2>
+        {%for comment in comments%}
+        <p>{{comment.user}}</p>
+        <p>{{comment.content}}</p>
+        {%endfor%}
+    </body>
+</html>
